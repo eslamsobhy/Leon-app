@@ -63,6 +63,10 @@ body {
     width: 60px;
 }
 
+.header .links {
+    position: relative;
+}
+
 /* when hovering big component, specific element inside being affected */
 .header .links:hover .icon span:nth-child(2){
     width: 100%;
@@ -92,6 +96,47 @@ body {
     width: 100%;
 }
 
- 
+ .header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc;
+    top: calc(100% + 20px);
+    display: none;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header .links ul li a:hover {
+    padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
 
 /* End header */
