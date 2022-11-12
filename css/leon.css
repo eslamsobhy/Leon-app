@@ -12,16 +12,10 @@
 body {
     font-family: "Work Sans", sans-serif;
 }
-/* End global rules */
 
-.parent {
-    /* back ground takes full screen */
-    background-color: #eee;
-}
 
 .container {
     /* the container holds the content inside of the parent */
-    background-color: #aaa;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -48,3 +42,11 @@ body {
         width: 1170px;
     }
 }
+
+/* End global rules */
+
+
+
+/* Start header */
+
+/* End header */
