@@ -13,3 +13,38 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 /* End global rules */
+
+.parent {
+    /* back ground takes full screen */
+    background-color: #eee;
+}
+
+.container {
+    /* the container holds the content inside of the parent */
+    background-color: #aaa;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Small screens */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
