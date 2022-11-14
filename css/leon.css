@@ -184,6 +184,40 @@ body {
 
 /* Start features section */
 
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.features .container  {
+    display: grid;
+    /* auto-fill: according to the available width, the number of columns will be set */
+    /* minmax(): for each column, the min width set is 300px or more equally */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.features .container .feat {
+    padding: 20px;
+    text-align: center;
+}
+
+.features .container .feat i {
+    color: var(--main-color);
+}
+
+.features .container .feat h3 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.features .container .feat p {
+    color: #777;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
 
 
 /* End features section */
