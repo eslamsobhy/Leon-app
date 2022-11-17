@@ -325,6 +325,12 @@ body {
     /* border-bottom-right-radius: 10px; */
 }
 
+@media (max-width: 990px) {
+    .image-col {
+        display: none;
+    }
+}
+
 /* end services */
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
