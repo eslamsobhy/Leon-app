@@ -20,6 +20,10 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   /* the container holds the content inside of the parent */
   padding-left: 15px;
