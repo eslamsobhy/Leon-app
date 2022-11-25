@@ -6,6 +6,7 @@
   --section-padding: 60px;
   --section-background: #f6f6f6;
   --paragraph-color: #777;
+  --transition-duration: 0.5s;
 }
 /* End variables */
 
@@ -84,6 +85,12 @@ html {
   }
 }
 
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
 /* End components */
 
 /* Start header */
@@ -129,7 +136,7 @@ html {
 }
 .header .links .icon span:nth-child(2) {
   width: 60%;
-  transition: 0.5s;
+  transition: var(--transition-duration);
 }
 .header .links .icon span:last-child {
   width: 100%;
@@ -168,7 +175,7 @@ html {
   padding: 15px;
   color: #333;
   text-decoration: none;
-  transition: 0.5s;
+  transition: var(--transition-duration);
 }
 
 .header .links ul li a:hover {
@@ -228,11 +235,13 @@ html {
 }
 
 .features .container {
-  display: grid;
+  /* display: grid; */
+
   /* auto-fill: according to the available width, the number of columns will be set */
   /* minmax(): for each column, the min width set is 300px or more equally */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 30px;
+
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px; */
 }
 
 .features .container .feat {
@@ -267,9 +276,9 @@ html {
 }
 
 .services .services-content {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-gap: 30px; */
   margin-top: 100px;
 }
 
@@ -347,9 +356,9 @@ html {
 }
 
 .portfolio .projects {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-gap: 30px; */
   margin-top: 100px;
 }
 
@@ -528,7 +537,7 @@ html {
 
 .contact .info .social i {
   margin-left: 7px;
-  transition: 0.6s;
+  transition: var(--transition-duration);
 }
 
 .contact .info .social .fa-youtube:hover {
